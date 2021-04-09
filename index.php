@@ -2,12 +2,12 @@
 
 require_once 'transacciones/transaccion.php';
 require_once 'helpers/utilities.php';
-require_once 'transacciones/serviceSession.php';
-require_once 'transacciones/serviceCookies.php';
+require_once 'FileHandler/jsonFileHandler.php';
+require_once 'transacciones/serviceFile.php';
 require_once 'layout/layout.php';
 
 $layout = new Layout(true);
-$service = new serviceCookies();
+$service = new serviceFile(true);
 
 $transacciones = $service->GetList();
 

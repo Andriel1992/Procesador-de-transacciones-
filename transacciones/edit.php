@@ -1,12 +1,12 @@
 <?php
 require_once 'transaccion.php';
 require_once '../layout/layout.php';
-require_once '../helpers/utilities.php';
-
-require_once 'serviceCookies.php';
+require_once '../FileHandler/jsonFileHandler.php'; 
+require_once '../helpers/utilities.php'; 
+require_once 'serviceFile.php';
 
 $layout = new Layout();
-$service = new serviceCookies();
+$service = new serviceFile();
 
 $transaccion = null;
 
