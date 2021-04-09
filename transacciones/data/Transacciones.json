@@ -1,1 +1,1 @@
-{"1":{"Id":"2","Monto":"12","Descriccion":"pago de prestamo","Fecha":"04-09-2021 12:58:14 am"},"2":{"Id":1,"Monto":"1","Descriccion":"pago de tc","Fecha":"04-09-2021 12:59:24 am"}}
+[{"Id":"1","Monto":"100","Descriccion":"pago de tc","Fecha":"04-09-2021 02:12:03 am"},{"Id":2,"Monto":"123","Descriccion":"pago de prestamo","Fecha":"04-09-2021 02:11:58 am"}]

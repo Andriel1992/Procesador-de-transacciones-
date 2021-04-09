@@ -1,0 +1,1 @@
+a:2:{i:1;O:11:"Transaccion":4:{s:2:"Id";s:1:"2";s:5:"Monto";s:3:"100";s:11:"Descriccion";s:15:"pago de tc apap";s:5:"Fecha";s:22:"04-09-2021 02:12:36 am";}i:2;O:11:"Transaccion":4:{s:2:"Id";i:3;s:5:"Monto";s:6:"123123";s:11:"Descriccion";s:15:"pago de tc apap";s:5:"Fecha";s:22:"04-09-2021 02:04:00 am";}}

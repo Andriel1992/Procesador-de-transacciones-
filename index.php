@@ -2,6 +2,10 @@
 
 require_once 'transacciones/transaccion.php';
 require_once 'helpers/utilities.php';
+require_once 'FileHandler/IFileHandler.php';
+require_once 'FileHandler/FileHandlerBase.php';
+require_once 'FileHandler/csvFileHandler.php';
+require_once 'FileHandler/SerialitationFileHandler.php';
 require_once 'FileHandler/jsonFileHandler.php';
 require_once 'transacciones/serviceFile.php';
 require_once 'layout/layout.php';

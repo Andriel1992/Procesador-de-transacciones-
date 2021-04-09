@@ -1,6 +1,6 @@
 <?php
 
-    class JsonFileHandler extends FileHandlerBase implements IFileHandler{
+    class SerialitationFileHandler extends FileHandlerBase implements IFileHandler{
 
         function __construct($directory,$filename)
         {
@@ -11,9 +11,9 @@
 
             $this->CreateDirectory($this->directory);
 
-            $path = $this->directory . "/" . $this->filename . ".json";
+            $path = $this->directory . "/" . $this->filename . ".txt";
 
-            $serializeData = json_encode($value);
+            $serializeData = serialize($value);
 
             $file = fopen($path,"w+");
             fwrite($file,$serializeData);
@@ -22,7 +22,7 @@
 
         public function ReadFile(){
             $this->CreateDirectory($this->directory);
-            $path = $this->directory. "/" . $this->filename . ".json";
+            $path = $this->directory. "/" . $this->filename . ".txt";
 
             if(file_exists($path)){
 
@@ -30,14 +30,11 @@
 
                 $contents = fread($file,filesize($path));
                 fclose($file);
-                return json_decode($contents);
+                return unserialize($contents);
 
             }else{
                 return null;
             }
 
         }
-
-
-        
     }

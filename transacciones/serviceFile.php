@@ -15,9 +15,8 @@ class serviceFile{
         $subdirectory = ($isRoot)? "transacciones/" : "";
         
         $this->directory = "{$subdirectory}data";
-        $this->filename = "Transacciones";
-        
-        $this->fileHandler = new JsonFileHandler();
+        $this->filename = "Transacciones";        
+        $this->fileHandler = new SerialitationFileHandler($this->directory,$this->filename);
         $this->utilities = new Utilities();
 
     }
@@ -37,7 +36,7 @@ class serviceFile{
 
         
 
-        $this->fileHandler->SaveFile($this->directory,$this->filename,$transacciones);
+        $this->fileHandler->SaveFile($transacciones);
 
        
     }
@@ -50,7 +49,7 @@ class serviceFile{
 
         if($index !== null){
             $transacciones[$index] = $item;
-            $this->fileHandler->SaveFile($this->directory,$this->filename,$transacciones);
+            $this->fileHandler->SaveFile($transacciones);
         }
         
     }
@@ -62,7 +61,7 @@ class serviceFile{
         if(count($transacciones) > 0){
             unset($transacciones[$index]);
            
-            $this->fileHandler->SaveFile($this->directory,$this->filename,$transacciones);
+            $this->fileHandler->SaveFile($transacciones);
         }
     }
 
@@ -75,7 +74,7 @@ class serviceFile{
 
     public function GetList(){
 
-        $transacciones = $this->fileHandler->ReadFile($this->directory,$this->filename);
+        $transacciones = $this->fileHandler->ReadFile();
 
         if($transacciones === null){
 
