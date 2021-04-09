@@ -1,0 +1,138 @@
+.bg-green{
+    background-color: rgba(0, 131, 7, 0.836);
+}
+
+.form-select {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  .formato-label {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
+.bg-header{
+    background-color: rgb(0, 0, 95);
+}
+
+.margen-botton-2{
+    margin-bottom: 2%;
+}
+
+.margen-top {
+    margin-top: 2%;
+}
+
+.margen-top-1 {
+    margin-top: 1%;
+}
+
+.validate-error {
+    border-color: red;
+    /* border-right-color: blueviolet; */
+    border-width: medium;
+}
+
+.margen-izq-2{
+    margin-right: 2%;
+}
+
+.margen-izq-15{
+    margin-right: 15%;
+}
+
+.margen-der-2{
+    margin-left: 2%;
+}
+.margen-der-15{
+    margin-left: 15%;
+}
+
+
+.margen-izq-5{
+    margin-left: 5%;
+}
+
+.float-end{
+    float: right;
+}
+
+.input-error{
+    border-color: rgb(250, 0, 0);
+    border-width: medium;
+
+}
+
+.line{
+    
+    border-top: 2px solid rgb(0 2 100 / 89%);
+}
+
+.bg-color{
+    background-color: rgb(0, 183, 255);
+}
+
+.bg-colMd4{
+    background-color: rgb(83, 0, 160);
+}
+
+.margen-top-100{
+    margin-top: 50%;
+}
+
+.margen-top-10{
+    margin-top: 10%;
+}
+
+.bg-colmd6{
+    background-color: rgb(231, 231, 231);
+}
+
+.borderColMd6{
+    
+    border: 2px solid #686868!important;
+}
+
+nav {
+    border-bottom: 1px solid black;
+}
+
+.crumbs ol {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.crumb {
+    display: inline-block;
+}
+
+.crumb a::after {
+    display: inline-block;
+    color: #000;
+    content: '>';
+    font-size: 80%;
+    font-weight: bold;
+    padding: 0 3px;
+}
